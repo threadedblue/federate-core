@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+configure(install.repositories.mavenInstaller) {
+    pom.project {
+        groupId 'iox.hla'
+        artifactId 'federate-score'
+        inceptionYear '2017'
+        packaging 'jar'
+    }
+}
+
+sourceCompatibility = 1.8
+version = '0.0.1'
+
+repositories {
+    maven {url 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath;}
+    jcenter()
+}
+ 
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.14'
+    compile 'org.porticoproject:portico:2.1.0'
+    testCompile 'junit:junit:4.+'
+}
