@@ -6,7 +6,7 @@ public class AbstractFederateTest {
 
 	@Test
 	public void testAbstractFederate() {
-		TestAbstractFederate sut = new TestAbstractFederate();
+//		TestAbstractFederate sut = new TestAbstractFederate();
 	}
 
 }

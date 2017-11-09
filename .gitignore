@@ -1,5 +1,4 @@
-bin/
 build/
-target/
 *.log
 /.gradle/
+federate-core/
